@@ -17,7 +17,7 @@ public class Login{
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://localhost:9002/");
-		driver.findElement(By.xpath("//span[contains(text(),'use your account')]/following-sibling::input[@type='username1']")).sendKeys("babu@testleaf.com");
+		driver.findElement(By.xpath("//span[contains(text(),'use your account')]/following-sibling::input[@type='username']")).sendKeys("babu@testleaf.com");
 		driver.findElement(By.xpath("//span[contains(text(),'use your account')]/following-sibling::input[@type='password']")).sendKeys("tester@123");
 		try {
 			Thread.sleep(5000);
